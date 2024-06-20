@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import "./navbar.css";
 import logo from '../../assets/logo.svg';
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -19,10 +20,11 @@ const Navbar = () => {
           <p><a href="#possibility">Open AI</a></p>
           <p><a href="#features">Case Studies</a></p>
           <p><a href="#blog">Library</a></p>
+          <p><a href="/register">Register</a></p>
         </div>
       </div>
       <div className="gpt3__navbar-sign">
-        <p>Sign in</p>
+      <Link to="/signin">Sign In</Link>
         <button type="button">Sign up</button>
       </div>
       <div className="gpt3__navbar-menu">
